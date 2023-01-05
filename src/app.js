@@ -126,11 +126,11 @@ app.patch("/api/product/:id", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/build/index.html");
+  res.sendFile(__dirname + "../build/index.html");
 });
 
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "/build/index.html"));
+  res.sendFile(path.join(__dirname, "../build/index.html"));
 });
 
 app.listen(PORT, () => console.log("server is running"));
