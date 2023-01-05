@@ -6,7 +6,7 @@ import path from "path";
 
 const __dirname = path.resolve();
 const app = express();
-app.use(express.static("../build")); // build 파일 사용 허용
+app.use(express.static("build")); // build 파일 사용 허용
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
